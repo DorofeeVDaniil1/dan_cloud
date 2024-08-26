@@ -1,4 +1,4 @@
-package com.example.dan_cloud;
+package com.example.dan_cloud.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
