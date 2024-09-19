@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: dan_cloud
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tacocloud   # URL для вашей базы данных PostgreSQL
+    username: postgres                           # Имя пользователя базы данных
+    password: admin                             # Пароль пользователя базы данных
+    driver-class-name: org.postgresql.Driver    # Драйвер PostgreSQL
+  sql:
+    init:
+      mode: always                             # Загрузка данных и схемы из SQL файлов

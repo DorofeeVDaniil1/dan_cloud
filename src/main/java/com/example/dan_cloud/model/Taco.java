@@ -4,6 +4,7 @@ import jakarta.validation.constraints.Size;
 import lombok.Data;
 import lombok.NonNull;
 
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -15,6 +16,9 @@ public class Taco {
     @NonNull
     @Size(min = 1,message = "Нужен минимум 1 ингридиент")
     private List<Ingredient> ingredients;
+
+    private Long id;
+    private Date createdAt = new Date();
 
     public Taco() {
 
